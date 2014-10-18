@@ -1,0 +1,25 @@
+{
+  "name": "archives",
+  "version": "1.0.0",
+  "description": "small application",
+  "main": "server.coffee",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "colors": "^1.0.3",
+    "connect-flash": "^0.1.1",
+    "cookie-session": "^1.0.2",
+    "csurf": "^1.6.2",
+    "express": "^4.9.8",
+    "jade": "^1.7.0",
+    "moment": "^2.8.3",
+    "mongoose": "^3.8.17",
+    "morgan": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.coffee"
+  },
+  "author": "LanF3usT",
+  "license": "MIT"
+}
