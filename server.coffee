@@ -36,7 +36,7 @@ app.locals.pretty = devMode
 ##############
 
 app.get "/files/", (req, res) ->
-  res.send { name: "Exemple d'un fichier", created_at: moment() }
+  res.json { name: "Exemple d'un fichier", created_at: moment() }
 
 ###############
 ### SERVEUR ###
