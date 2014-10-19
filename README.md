@@ -2,25 +2,25 @@
 
 ## Pré-requis
 
-Installation de node :
+**Installation de Node :**
 
-    - Homebrew : `brew install node`
-    - Manuellement : `http://nodejs.org/download/`
+  - Homebrew : `brew install node`
+  - Manuellement : `http://nodejs.org/download/`
 
-Installation de MongoDB :
+**Installation de MongoDB :**
 
-    - à venir
+  - à venir
 
 ## Installation
 
-https://github.com/LanF3usT/archives.git
+    git clone https://github.com/LanF3usT/archives.git
+    mkdir archives
 
-Lancer les commandes :
+**Lancer les commandes :**
 
-$ npm install
-$ npm install -g nodemon
-$ npm install -g coffee-script
+    npm install
+    npm install -g nodemon coffee-script
 
 ## Démarrer le serveur
 
-$ npm start
+    npm start
