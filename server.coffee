@@ -7,21 +7,29 @@
 require "colors"
 express = require("express")
 http    = require("http")
+morgan  = require("morgan")
 util    = require("util")
-moment  = require('moment')
+moment  = require("moment")
 
 #################
 ### VARIABLES ###
 #################
 
-app = express()
-server = http.createServer(app)
+app     = express()
+server  = http.createServer(app)
+devMode = "development" == app.get("env")
 
 ######################
 ### CONFIGURATIONS ###
 ######################
 
 app.set("port", process.env.PORT || 3000)
+
+# Log en mode dev ou common
+app.use morgan(if devMode then "dev" else "common")
+
+# Voir le HTML indenté dans la source
+app.locals.pretty = devMode
 
 ##############
 ### ROUTES ###
