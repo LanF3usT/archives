@@ -19,8 +19,12 @@
 **Lancer les commandes :**
 
     npm install
-    npm install -g nodemon coffee-script
+    npm install -g nodemon coffee-script mocha
 
 ## Démarrer le serveur
 
     npm start
+
+## Lancer les tests
+
+    npm test
