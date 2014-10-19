@@ -38,6 +38,9 @@ app.locals.pretty = devMode
 app.get "/files/", (req, res) ->
   res.json { name: "Exemple d'un fichier", created_at: moment() }
 
+app.get "*", (req, res) ->
+  res.json { error: "404 : page non trouvée !" }, 404
+
 ###############
 ### SERVEUR ###
 ###############
