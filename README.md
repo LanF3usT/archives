@@ -14,7 +14,7 @@
 ## Installation
 
     git clone https://github.com/LanF3usT/archives.git
-    mkdir archives
+    cd archives
 
 **Lancer les commandes :**
 

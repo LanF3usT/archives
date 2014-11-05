@@ -39,7 +39,7 @@ app.get "/files/", (req, res) ->
   res.json { name: "Exemple d'un fichier", created_at: moment() }
 
 app.get "*", (req, res) ->
-  res.json { error: "404 : page non trouvée !" }, 404
+  res.status(404).json { error: "404 : page non trouvée !" }
 
 ###############
 ### SERVEUR ###
