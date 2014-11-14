@@ -19,7 +19,7 @@
 **Lancer les commandes :**
 
     npm install
-    npm install -g nodemon coffee-script mocha
+    npm install -g nodemon coffee-script mocha grunt-cli
 
 ## Démarrer le serveur
 
